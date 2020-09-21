@@ -12,9 +12,9 @@ const forecast = ( long, lat, callback) =>{
             callback('Unable to find you, you so damn lost', undefined)
         } else {
             callback( undefined, 
-                body.current.weather_descriptions[0] + ('. Its currently ') 
-                + body.current.temperature + (' degrees outside. It feels like ') + body.current.feelslike + (' degrees out') 
-                + ('and the humidity is ')  + body.current.humidity + ('%'))
+                body.current.weather_descriptions[0] + '. Its currently '
+                + body.current.temperature + ' degrees outside. It feels like ' + body.current.feelslike + ' degrees out' 
+                + 'and the humidity is '  + body.current.humidity + '%')
     }
             
         
