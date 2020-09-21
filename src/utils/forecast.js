@@ -1,5 +1,5 @@
 const request = require('request')
-const chalk = require('chalk')
+
 
 const forecast = ( long, lat, callback) =>{
     const url = 'http://api.weatherstack.com/current?access_key=ea1931ed5f7ba42daa6421bbeae536a0&query='+ long + ',' + lat +'&units=m'
